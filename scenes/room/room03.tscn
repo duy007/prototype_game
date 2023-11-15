@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://addons/egoventure/nodes/four_side_room.tscn" type="PackedScene" id=1]
+[ext_resource path="res://images/room_03/room03b.png" type="Texture" id=2]
+[ext_resource path="res://images/room_03/room03a.png" type="Texture" id=3]
+[ext_resource path="res://images/room_03/room03c.png" type="Texture" id=4]
+[ext_resource path="res://images/room_03/room03d.png" type="Texture" id=5]
+[ext_resource path="res://addons/egoventure/nodes/hotspots/walk_hotspot.gd" type="Script" id=6]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Room" parent="." instance=ExtResource( 1 )]
+front_texture = ExtResource( 3 )
+right_texture = ExtResource( 2 )
+back_texture = ExtResource( 4 )
+left_texture = ExtResource( 5 )
+
+[node name="WalkHotspot" type="TextureButton" parent="."]
+margin_left = 447.0
+margin_top = -690.0
+margin_right = 901.0
+margin_bottom = -20.0
+mouse_default_cursor_shape = 3
+script = ExtResource( 6 )
+target_scene = "res://scenes/room/room04.tscn"
+target_view = "front"
+
+[node name="WalkHotspot2" type="TextureButton" parent="."]
+margin_left = 423.0
+margin_top = 818.0
+margin_right = 843.0
+margin_bottom = 1373.0
+mouse_default_cursor_shape = 3
+script = ExtResource( 6 )
+target_scene = "res://scenes/room/room02.tscn"
+target_view = "back"
