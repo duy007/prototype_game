@@ -1,101 +1,97 @@
-[gd_resource type="Resource" load_steps=44 format=2]
+[gd_resource type="Resource" load_steps=40 format=2]
 
 [ext_resource path="res://addons/egoventure/resources/game_configuration.gd" type="Script" id=1]
-[ext_resource path="res://images/misc/arrow_previous.png" type="Texture" id=3]
-[ext_resource path="res://images/misc/logo.png" type="Texture" id=4]
+[ext_resource path="res://images/mouse/forward.png" type="Texture" id=2]
+[ext_resource path="res://images/mouse/map.png" type="Texture" id=3]
+[ext_resource path="res://images/mouse/hand.png" type="Texture" id=4]
 [ext_resource path="res://theme.tres" type="Theme" id=5]
-[ext_resource path="res://images/misc/menu_background.png" type="Texture" id=6]
-[ext_resource path="res://images/misc/arrow_next.png" type="Texture" id=7]
-[ext_resource path="res://sounds/misc/testing_voice.ogg" type="AudioStream" id=8]
-[ext_resource path="res://sounds/misc/testing_effects.ogg" type="AudioStream" id=9]
-[ext_resource path="res://images/mouse/common.png" type="Texture" id=10]
-[ext_resource path="res://images/misc/notepad_icon.png" type="Texture" id=11]
-[ext_resource path="res://images/mouse/forward.png" type="Texture" id=12]
-[ext_resource path="res://images/mouse/right.png" type="Texture" id=13]
-[ext_resource path="res://images/mouse/left.png" type="Texture" id=14]
+[ext_resource path="res://images/mouse/left.png" type="Texture" id=6]
+[ext_resource path="res://images/mouse/exit.png" type="Texture" id=7]
+[ext_resource path="res://images/mouse/backward.png" type="Texture" id=8]
+[ext_resource path="res://images/mouse/magnifier.png" type="Texture" id=9]
+[ext_resource path="res://images/mouse/right.png" type="Texture" id=10]
+[ext_resource path="res://images/mouse/use.png" type="Texture" id=11]
+[ext_resource path="res://images/mouse/common.png" type="Texture" id=12]
+[ext_resource path="res://images/misc/notepad_icon.png" type="Texture" id=13]
+[ext_resource path="res://images/misc/arrow_previous.png" type="Texture" id=14]
 [ext_resource path="res://addons/egoventure/resources/cursor.gd" type="Script" id=15]
-[ext_resource path="res://images/mouse/use.png" type="Texture" id=16]
-[ext_resource path="res://images/mouse/backward.png" type="Texture" id=17]
-[ext_resource path="res://images/mouse/magnifier.png" type="Texture" id=18]
-[ext_resource path="res://images/mouse/right_corner.png" type="Texture" id=19]
-[ext_resource path="res://images/mouse/left_corner.png" type="Texture" id=20]
-[ext_resource path="res://images/misc/black.jpg" type="Texture" id=21]
-[ext_resource path="res://images/misc/map_icon.png" type="Texture" id=22]
-[ext_resource path="res://images/mouse/map.png" type="Texture" id=23]
-[ext_resource path="res://images/mouse/hand.png" type="Texture" id=24]
-[ext_resource path="res://images/mouse/exit.png" type="Texture" id=25]
-[ext_resource path="res://sounds/misc/map_icon.ogg" type="AudioStream" id=27]
+[ext_resource path="res://images/misc/menu_icon.png" type="Texture" id=16]
+[ext_resource path="res://images/misc/reveal_icon.png" type="Texture" id=17]
+[ext_resource path="res://images/misc/arrow_next.png" type="Texture" id=18]
+[ext_resource path="res://images/misc/map_icon.png" type="Texture" id=19]
+[ext_resource path="res://images/misc/earth_game_logo.png" type="Texture" id=20]
+[ext_resource path="res://images/misc/background.png" type="Texture" id=21]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 15 )
 type = 1
-cursor = ExtResource( 12 )
+cursor = ExtResource( 2 )
 cursor_hotspot = Vector2( 32, 32 )
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 15 )
 type = 3
-cursor = ExtResource( 13 )
+cursor = ExtResource( 10 )
 cursor_hotspot = Vector2( 32, 32 )
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 15 )
 type = 4
-cursor = ExtResource( 14 )
+cursor = ExtResource( 6 )
 cursor_hotspot = Vector2( 32, 32 )
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 15 )
 type = 2
-cursor = ExtResource( 17 )
+cursor = ExtResource( 8 )
 cursor_hotspot = Vector2( 42, 42 )
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 15 )
 type = 8
-cursor = ExtResource( 18 )
+cursor = ExtResource( 9 )
 cursor_hotspot = Vector2( 48, 32 )
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 15 )
 type = 7
-cursor = ExtResource( 16 )
+cursor = ExtResource( 11 )
 cursor_hotspot = Vector2( 32, 32 )
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 15 )
 type = 5
-cursor = ExtResource( 19 )
+cursor = ExtResource( 2 )
 cursor_hotspot = Vector2( 32, 32 )
 
 [sub_resource type="Resource" id=8]
 script = ExtResource( 15 )
 type = 6
-cursor = ExtResource( 20 )
+cursor = ExtResource( 8 )
 cursor_hotspot = Vector2( 32, 32 )
 
 [sub_resource type="Resource" id=9]
 script = ExtResource( 15 )
 type = 11
-cursor = ExtResource( 23 )
+cursor = ExtResource( 3 )
 cursor_hotspot = Vector2( 49, 48 )
 
 [sub_resource type="Resource" id=10]
 script = ExtResource( 15 )
 type = 9
-cursor = ExtResource( 10 )
+cursor = ExtResource( 9 )
 cursor_hotspot = Vector2( 32, 32 )
 
 [sub_resource type="Resource" id=11]
 script = ExtResource( 15 )
 type = 12
-cursor = ExtResource( 24 )
+cursor = ExtResource( 4 )
 cursor_hotspot = Vector2( 46, 32 )
 
 [sub_resource type="Resource" id=12]
 script = ExtResource( 15 )
 type = 10
-cursor = ExtResource( 25 )
+cursor = ExtResource( 7 )
 cursor_hotspot = Vector2( 75, 40 )
 
 [sub_resource type="Resource" id=13]
@@ -107,25 +103,25 @@ cursor_hotspot = Vector2( 32, 32 )
 [sub_resource type="Resource" id=14]
 script = ExtResource( 15 )
 type = 14
-cursor = ExtResource( 10 )
+cursor = ExtResource( 12 )
 cursor_hotspot = Vector2( 0, 0 )
 
 [sub_resource type="Resource" id=15]
 script = ExtResource( 15 )
 type = 15
-cursor = ExtResource( 10 )
+cursor = ExtResource( 12 )
 cursor_hotspot = Vector2( 0, 0 )
 
 [sub_resource type="Resource" id=16]
 script = ExtResource( 15 )
 type = 16
-cursor = ExtResource( 10 )
+cursor = ExtResource( 12 )
 cursor_hotspot = Vector2( 0, 0 )
 
 [sub_resource type="Resource" id=17]
 script = ExtResource( 15 )
 type = 0
-cursor = ExtResource( 10 )
+cursor = ExtResource( 12 )
 cursor_hotspot = Vector2( 32, 32 )
 
 [sub_resource type="AudioStreamOGGVorbis" id=18]
@@ -134,33 +130,31 @@ data = PoolByteArray( 79, 103, 103, 83, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 228, 113, 
 [resource]
 script = ExtResource( 1 )
 design_theme = ExtResource( 5 )
-design_logo = ExtResource( 4 )
+design_logo = ExtResource( 20 )
 design_cursors = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ]
-menu_background = ExtResource( 6 )
+menu_background = ExtResource( 21 )
 menu_switch_effect = SubResource( 18 )
 menu_item_separation = 30
 menu_quit_confirmation = "Do you really want to quit the game?"
 menu_overwrite_confirmation = "Are you sure you want to overwrite a saved game?"
 menu_restart_confirmation = "You will lose all progress when starting a new game. Do you really want to restart?"
 menu_saveslots_background = ExtResource( 21 )
-menu_saveslots_previous_image = ExtResource( 3 )
-menu_saveslots_next_image = ExtResource( 7 )
 menu_saveslots_empty_color = Color( 0, 0, 0, 0.55 )
 menu_saveslots_free_text = "Free save slot"
 inventory_size = 128
-inventory_texture_notepad = ExtResource( 11 )
+inventory_texture_menu = ExtResource( 16 )
+inventory_texture_notepad = ExtResource( 13 )
+inventory_texture_reveal = ExtResource( 17 )
+inventory_texture_left_arrow = ExtResource( 14 )
+inventory_texture_right_arrow = ExtResource( 18 )
 menu_options_background = ExtResource( 21 )
-menu_options_speech_sample = ExtResource( 8 )
-menu_options_effects_sample = ExtResource( 9 )
 menu_options_locale_button_modulate = Color( 1, 1, 1, 0.2 )
 menu_options_locale_button_modulate_selected = Color( 1, 1, 1, 1 )
 menu_options_hide_language_selection = false
 notepad_hints_file = "res://hints.txt"
-notepad_background = ExtResource( 21 )
 notepad_goals_rect = Rect2( 588, 375, 552, 207 )
 notepad_hints_rect = Rect2( 1243, 325, 545, 763 )
-tools_map_image = ExtResource( 22 )
-tools_map_sound = ExtResource( 27 )
+tools_map_image = ExtResource( 19 )
 tools_navigation_width = 420.0
 tools_dialog_stretch_ratio = 2.0
 tools_music_fader_seconds = 0.5

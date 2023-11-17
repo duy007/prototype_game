@@ -16,10 +16,10 @@ back_texture = ExtResource( 4 )
 left_texture = ExtResource( 3 )
 
 [node name="WalkHotspot" type="TextureButton" parent="."]
-margin_left = 460.0
-margin_top = 867.0
-margin_right = 854.0
-margin_bottom = 1345.0
+margin_left = 476.0
+margin_top = 990.0
+margin_right = 681.0
+margin_bottom = 1155.0
 mouse_default_cursor_shape = 3
 script = ExtResource( 6 )
 target_scene = "res://scenes/room/room03.tscn"

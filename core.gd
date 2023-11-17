@@ -21,7 +21,11 @@ func _ready():
 # - item1: First item
 # - item2: Second item
 func _on_triggered_inventory_item(item1: InventoryItem, item2: InventoryItem):
-	pass
+	if (item1.title == 'bucket' and item2.title == 'tape') or (item1.title == 'tape' and item2.title == 'bucket') :
+		Inventory.remove_item(preload("res://inventory/bucket.tres"))
+		Inventory.remove_item(preload("res://inventory/tape.tres"))
+		Inventory.add_item(preload("res://inventory/wrench.tres"), true)
+		DetailView.show_with_item(preload('res://inventory/wrench.tres'))
 
 
 # Triggered when a new game is started.

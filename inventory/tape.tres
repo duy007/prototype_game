@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://addons/egoventure/resources/inventory_item.gd" type="Script" id=1]
+[ext_resource path="res://inventory/tape.png" type="Texture" id=2]
+[ext_resource path="res://inventory/tape_active.png" type="Texture" id=3]
+[ext_resource path="res://inventory/tape_big.png" type="Texture" id=4]
+
+[resource]
+script = ExtResource( 1 )
+title = "tape"
+description = "a normal tape roll"
+image_normal = ExtResource( 2 )
+image_active = ExtResource( 3 )
+image_big = ExtResource( 4 )
+combineable_with = [  ]
+detail_scene = ""
+detail_show_mouse = false
+grabbable = true

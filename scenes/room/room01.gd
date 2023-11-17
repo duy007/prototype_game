@@ -9,6 +9,8 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Inventory.enable()
+	Inventory.add_item(preload("res://inventory/bucket.tres"))
+	Inventory.add_item(preload("res://inventory/tape.tres"))
 #	(EgoVenture.state as GameState).money += (EgoVenture.state as GameState).money
 
 
