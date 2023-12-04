@@ -51,6 +51,10 @@ func show_detail():
 
 # Show active image on inventory item hover
 func _on_mouse_entered():
+	if Inventory.selected_item == null:
+#		self.hint_string = self.item.title
+		self.hint_tooltip = self.item.title
+		print(self.get_property_list())
 	if Inventory.selected_item != null and \
 			Inventory.selected_item != self:
 		var found = false
