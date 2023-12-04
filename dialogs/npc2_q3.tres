@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=6 format=2]
+
+[ext_resource path="res://addons/parrot/resources/dialog_line_resource.gd" type="Script" id=1]
+[ext_resource path="res://addons/parrot/resources/character_resource.gd" type="Script" id=2]
+[ext_resource path="res://addons/parrot/resources/dialog_resource.gd" type="Script" id=3]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+name = "NPC2"
+color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 1 )
+character = SubResource( 1 )
+text = "I’m sure the post-purchase rush will fade into emptiness soon enough."
+
+[resource]
+script = ExtResource( 3 )
+lines = [ SubResource( 2 ) ]

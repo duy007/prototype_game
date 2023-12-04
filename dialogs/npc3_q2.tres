@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=6 format=2]
+[gd_resource type="Resource" load_steps=8 format=2]
 
 [ext_resource path="res://addons/parrot/resources/dialog_resource.gd" type="Script" id=1]
 [ext_resource path="res://addons/parrot/resources/dialog_line_resource.gd" type="Script" id=2]
@@ -6,15 +6,24 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
-name = "Carol"
-color = Color( 1, 1, 1, 1 )
+name = "NPC3"
+color = Color( 1, 0.901961, 0.105882, 1 )
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 character = SubResource( 1 )
-text = "No, but he must have let him stay there for free,
-since he couldn’t possibly have afforded it."
+text = "Marvelous! My son will love this, I’ll have two."
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+name = "PC"
+color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+character = SubResource( 3 )
+text = "Thanks! Have a nice day!"
 
 [resource]
 script = ExtResource( 1 )
-lines = [ SubResource( 2 ) ]
+lines = [ SubResource( 2 ), SubResource( 4 ) ]

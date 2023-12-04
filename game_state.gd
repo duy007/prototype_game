@@ -8,3 +8,4 @@ extends BaseState
 
 ## The player has taken the keys
 export(int) var money = 1000
+export(int) var npc_1 = 0

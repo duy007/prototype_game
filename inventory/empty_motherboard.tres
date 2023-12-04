@@ -1,8 +1,9 @@
-[gd_resource type="Resource" load_steps=4 format=2]
+[gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://addons/egoventure/resources/inventory_item.gd" type="Script" id=1]
 [ext_resource path="res://inventory/empty_motherboard.jpg" type="Texture" id=2]
 [ext_resource path="res://inventory/empty_motherboard_active.jpg" type="Texture" id=3]
+[ext_resource path="res://inventory/copper.tres" type="Resource" id=4]
 
 [resource]
 script = ExtResource( 1 )
@@ -11,7 +12,7 @@ description = ""
 image_normal = ExtResource( 2 )
 image_active = ExtResource( 3 )
 image_big = ExtResource( 2 )
-combineable_with = [  ]
+combineable_with = [ ExtResource( 4 ) ]
 detail_scene = ""
 detail_show_mouse = false
 grabbable = true

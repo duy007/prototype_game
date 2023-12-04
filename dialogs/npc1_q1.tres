@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://addons/parrot/resources/dialog_line_resource.gd" type="Script" id=1]
+[ext_resource path="res://addons/parrot/resources/character_resource.gd" type="Script" id=2]
+[ext_resource path="res://addons/parrot/resources/dialog_resource.gd" type="Script" id=3]
+[ext_resource path="res://images/room_01/player_s_0.png" type="Texture" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+name = "NPC1"
+color = Color( 0.360784, 0.945098, 0.0313726, 1 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 1 )
+character = SubResource( 1 )
+text = "Would it go well with my jacket? I was just planning out what to wear tonight…"
+image = ExtResource( 4 )
+
+[resource]
+script = ExtResource( 3 )
+lines = [ SubResource( 2 ) ]

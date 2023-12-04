@@ -1,0 +1,39 @@
+[gd_resource type="Resource" load_steps=10 format=2]
+
+[ext_resource path="res://addons/parrot/resources/dialog_resource.gd" type="Script" id=1]
+[ext_resource path="res://addons/parrot/resources/dialog_line_resource.gd" type="Script" id=2]
+[ext_resource path="res://addons/parrot/resources/character_resource.gd" type="Script" id=3]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+name = "PC"
+color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+character = SubResource( 1 )
+text = "It’s a [product description with hook, etc]. Are y’ interested?"
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+name = "NPC3"
+color = Color( 1, 0.901961, 0.105882, 1 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+character = SubResource( 3 )
+text = "Marvelous! I simply must have one. How much are you offering?"
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 3 )
+name = "PC"
+color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+character = SubResource( 5 )
+text = "[Amount] For 1, and if y’ buy 2 I’ll throw in a [accessory] for ya, miz/ mister (depending on the character)."
+
+[resource]
+script = ExtResource( 1 )
+lines = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ) ]

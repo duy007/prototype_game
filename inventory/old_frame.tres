@@ -2,12 +2,12 @@
 
 [ext_resource path="res://addons/egoventure/resources/inventory_item.gd" type="Script" id=1]
 [ext_resource path="res://inventory/old_engine_active.jpeg" type="Texture" id=2]
-[ext_resource path="res://inventory/old_engine.jpeg" type="Texture" id=3]
-[ext_resource path="res://inventory/oilcan.tres" type="Resource" id=4]
+[ext_resource path="res://inventory/old_frame.png" type="Texture" id=3]
+[ext_resource path="res://inventory/metal.tres" type="Resource" id=4]
 
 [resource]
 script = ExtResource( 1 )
-title = "old engine"
+title = "old frame"
 description = ""
 image_normal = ExtResource( 3 )
 image_active = ExtResource( 2 )

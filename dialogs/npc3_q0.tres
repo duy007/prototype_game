@@ -6,34 +6,33 @@
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 3 )
-name = "Carol"
+name = "PC"
 color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="Resource" id=2]
 script = ExtResource( 2 )
 character = SubResource( 1 )
-text = "It’s somewhere at the countryside."
+text = "[Calling Out]: SeaScoots For sale!"
 
 [sub_resource type="Resource" id=3]
 script = ExtResource( 3 )
-name = "Carol"
+name = "PC"
 color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="Resource" id=4]
 script = ExtResource( 2 )
 character = SubResource( 3 )
-text = "He wanted me to know where he was in case something happened,
-so he gave me this note with the address."
+text = "[Speaking normally]: ’Allo there! Lovely weather t’day"
 
 [sub_resource type="Resource" id=5]
 script = ExtResource( 3 )
-name = "Carol"
-color = Color( 1, 1, 1, 1 )
+name = "NPC3"
+color = Color( 1, 0.901961, 0.105882, 1 )
 
 [sub_resource type="Resource" id=6]
 script = ExtResource( 2 )
 character = SubResource( 5 )
-text = ""
+text = "Well there, isn’t this fascinating? What could this possibly be?"
 
 [resource]
 script = ExtResource( 1 )
